@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+<title>Healthy Lifestyle at a glance | Adam Standish</title>
+</head>
+<body>
+
+  <header>
+    <h3>Find Your Fitness Lifestyle!</h3>
+  </header>
+
+  <main>
+    <section class="container"><br>
+      <h3>How To Use:<br>
+        Select Your Workout Or Diet, Press 'Find', And View Your Results!</h3>
+      <div class="form1">
+        <form id="exerciseForm">
+          <label for="excerciseType">What Type Of Excercise Today?</label>
+          <select name="exerciseType" id="exerciseType">
+            <option value="Weightlifting Workout">Weightlifting Workout</option>
+            <option value="Crossfit Workout">Crossfit/HIIT Workout</option>
+            <option value="Running Workout">Running Workout</option>
+            <option value="Yoga Workout">Yoga Workout</option>
+            <option value="Pilates Workout">Pilates Workout</option>
+          </select><br><br>
+        </form>
+      <button type="submit" form="exerciseForm" name="exerciseForm" value="Let's Go!">Find Your Workout</button>
+
+      <div id="exercise" class="exercise hidden">
+        <ul class="exerciseResults">
+        </ul>
+      </div>
+      </div>
+
+      <div class="form2">
+        <form id="dietForm">
+          <label for="dietType">What Type Of Diet Are You On?</label><br>
+          <select name="dietType" id="dietType">
+            <option value="Ketogenic">Ketogenic</option>
+            <option value="Paleo">Paleo</option>
+            <option value="Gluten-Free">Gluten Free</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select><br><br>
+        </form>
+        <button type="submit" form="dietForm" name="dietForm" value="Let's Go!">Find Your Recipe</button>
+
+        <div id="diet" class="diet hidden">
+          <ul class="dietResults">
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <h3>What Did You Think?</h3>
+    <nav>
+      <ul class="list-inline" id="contact"> <!-- SOCIAL MEDIA LINKS -->
+        <li class="list-inline-item"><a href="https://github.com/cloudflips32"><i class="fab fa-github-square fa-3x"></i></a></li>
+        <li class="list-inline-item"><a href="https://twitter.com/AdamStandish1"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/adam-standish-64330a1b2/"><i class="fab fa-linkedin fa-3x"></i></a></li>
+        <li class="list-inline-item"><a href="mailto:cloudflips321@icloud.com?Subject=Awesome%20Page%Adam!"><i class="fas fa-envelope fa-3x"></i></a></li>
+      </ul>
+    </nav>  
+  </footer>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
