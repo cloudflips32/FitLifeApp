@@ -56,8 +56,8 @@ function displayExerciseResults(responseJson) {
           <h3>Today's Featured Exercise:</h3><br>
           <a href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}"><h3>${responseJson.items[i].snippet.title}</h3></a><br>
           <a href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}"><img class="thumbPic" src="${responseJson.items[i].snippet.thumbnails.medium.url}"></a><br>
-          <p>${responseJson.items[i].snippet.description}</p><br>
-        </li>
+          <p>${responseJson.items[i].snippet.description}</p>
+        </li><br>
       `
     );
   };
@@ -75,7 +75,7 @@ function getDietChoice(query, resultCount=10) {
 
   const queryString = formatQueryParams(params)
   const url = recipeSearchURL + '?' + queryString;
-  // console.log(url);
+  console.log(url);
   
   fetch(url)
     .then(response => {
@@ -98,12 +98,12 @@ function displayDietResults(responseJson) {
   // iterate through the items array
   for (let i = 0; i < responseJson.results.length; i++) {
     let recipeId = responseJson.results[i].id;
-    console.log(recipeId);
+    // console.log(recipeId);
 
     getRecipe(recipeId)
     .then(response => {
       if (response.ok) {
-        // console.log('about to return JSON response');
+        console.log('about to return JSON response');
         return response.json();
       }
       throw new Error(response.statusText);
@@ -117,7 +117,7 @@ function displayDietResults(responseJson) {
             <h3>${responseJson.results[i].title}</h3><br>
             <img class="foodPic" src="${responseJson.results[i].image}"><br><br>
             <a href="${recipe.sourceUrl}" target="_blank" class="recipeLink">>>View Your Recipe Here!<<</a><br>
-          </li>
+          </li><br>
         `
       );
     })
