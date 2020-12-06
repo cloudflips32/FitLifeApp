@@ -61,6 +61,7 @@ form label {
 form select {
   position: absolute right 30px;
   padding: 10px;
+  overflow: hidden;
 }
 
 button {
