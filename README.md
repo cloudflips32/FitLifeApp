@@ -2,8 +2,8 @@
 
 ## The FitLife App!
 
-Format: ![FitLife App Pic](FitLifeApp.png)
+[FitLife App Pic](FitLifeApp.png)
 
-App URL- https://cloudflips32.github.io/FitLifeApp/
+App URL- [FitLife App](https://cloudflips32.github.io/FitLifeApp/)
 
 Enjoy!
