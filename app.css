@@ -98,6 +98,7 @@ ul li {
   list-style-type: none;
   align-items: center;
   word-wrap: break-word;
+  margin-bottom: 2rem;
 }
 
 img {
