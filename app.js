@@ -57,7 +57,7 @@ function displayExerciseResults(responseJson) {
           <a target="_blank" href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}"><h3>${responseJson.items[i].snippet.title}</h3></a><br>
           <a target="_blank" href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}"><img class="thumbPic" alt="youtube video thumbnail" src="${responseJson.items[i].snippet.thumbnails.medium.url}"></a><br>
           <p>${responseJson.items[i].snippet.description}</p>
-        </li><br>
+        </li>
       `
     );
   };
@@ -117,7 +117,7 @@ function displayDietResults(responseJson) {
             <h3>${responseJson.results[i].title}</h3><br>
             <img class="foodPic" alt="recipe pic" src="${responseJson.results[i].image}"><br><br>
             <a href="${recipe.sourceUrl}" target="_blank" class="recipeLink">>>View Your Recipe Here!<<</a><br>
-          </li><br>
+          </li>
         `
       );
     })
